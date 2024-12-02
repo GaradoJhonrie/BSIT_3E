@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00203FFF; /* Background color */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+}
+
+header {
+    width: 100%;
+    padding: 15px 0; /* Spacing around the header */
+    display: flex;
+    justify-content: flex-end; /* Align nav to the right */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navbar li {
+    margin: 0 10px; /* Space between items */
+}
+
+.navbar a {
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Font size */
+    padding: 10px 20px; /* Padding for clickable area */
+    background-color: #444; /* Background color for each box */
+    border-radius: 15px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Center image and text vertically */
+    justify-content: center; /* Center image and text horizontally */
+    max-width: 800px; /* Maximum width of the profile container */
+    padding: 20px;
+    margin: 80px 0; /* Adjusted margin for more space above and below */
+}
+
+.image-container {
+    flex: 1; /* Flex-grow to fill available space */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.profile-image {
+    border-radius: 50%; /* Circular image */
+    width: 250px; /* Image width */
+    height: 250px; /* Image height */
+    object-fit: cover; /* Cover aspect ratio */
+}
+
+.text-container {
+    flex: 2; /* Flex-grow to fill available space */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 30px; /* Gap between paragraphs */
+}
+.paragraph {
+    background: #ADEFD1FF; /* Background color for paragraphs */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside paragraphs */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 80%; /* Change this to desired width or max-width */
+    max-width: 600px; /* Set a maximum width to ensure responsiveness */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+.details-box {
+    background: #ADEFD1FF; /* Background color for the details box */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px 50px; /* Reduce padding on top to close space */
+    margin: 5px 0; /* Space above and below the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    line-height: 1.8; /* Increased line spacing for readability */
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width to ensure responsiveness */
+    margin: 0 auto; /* Center the details box */
+}
+
+/* Additional styles for the heading */
+.details-box h2 {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Optional: Add space below the heading */
+}
+
+.greeting {
+    font-size: 24px; /* Font size for greetings */
+    font-weight: bold; /* Bold text */
+}
+
+.about, .future-goal {
+    font-size: 16px; /* Font size for about and future goal sections */
+}
+
+h2 {
+    margin-top: 40px; /* Space above section headings */
+}
+
+footer {
+    
+    padding: 50px; /* Padding inside the footer */
+    text-align: center; /* Center text inside the footer */
+	            position: fixed;
+            bottom: 0;
+}
+
+.social-grid {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 30px; /* Space between icons */
+}
+
+.circle {
+    display: inline-block; /* Keep the links inline */
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Ensure images fit within circle */
+}
+
+.circle img {
+    width: 40px; /* Set a fixed size for the icons */
+    height: auto; /* Maintain aspect ratio */
+}
